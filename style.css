@@ -12,7 +12,7 @@ li {list-style-type: none;}
 a {text-decoration: none; color: #1E1E1E;}
 a:hover {color: #F6A669;}
 
-.mb{margin-bottom: 50px;}
+.mb {margin-bottom: 50px;}
 
 .btn {
     background-color: #F6A669; 
@@ -70,14 +70,9 @@ a:hover {color: #F6A669;}
 
 
 /* Cards --------------------*/
-.cards-container {
-    display: flex;
-}
+.cards h2 { color:#509B4F; text-align: center; }
 
-.card h3 {
-    margin: 5px;
-}
+.cards_container {display: flex; flex-direction: row;}
 
-.card img {
-    width: 100%;
-}
+.card {width: 50%; height: 135px; display: flex; justify-content: space-between; background: linear-gradient(90.01deg, #509B4F 12.04%, #8FCA94 46.61%); margin: 10px;}
+.card img {width: 50%;}
