@@ -10,8 +10,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,13 +20,16 @@
     <!-- NAVBAR -->
     <nav>
         <div class="navbar">
-            <h1>Cucina All'Italiana</h1>
-            <ul class="menu">
+            <div class="navbar_logo">
+                <img src="img/logo.png" alt="Logo">
+                <h1>Cucina All'Italiana</h1>
+            </div>
+            <ul class="navbar_menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="chi-siamo.html">Chi siamo</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
-            <form class="modulo-ricerca">
+            <form class="navbar_search">
                 <input id="search" type="text" placeholder="Cerca ricetta" required>
                 <input id="submit" type="submit" value="CERCA">
             </form>
@@ -33,14 +37,14 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero mb">
         <div class="hero_container">
-            <h2>Impara a cucinare con pochi semplici passi le ricette più gustose della nostra Pernisola</h2>
-            <button>Scopri di più</button>
+            <h2>Impara a cucinare con pochi <br> semplici passi le ricette <br> più gustose della <br> nostra Pernisola</h2>
+            <button class="btn hero_btn">Scopri di più</button>
 
             <div class="hero_social">
                 <h3>Seguici</h3>
-                <ul>
+                <ul class="hero_social_icon">
                     <li><img src="img/instagram.png" alt="Instagram"></li>
                     <li><img src="img/tik-tok.png" alt="Tik Tok"></li>
                     <li><img src="img/facebook.png" alt="Facebook"></li>
@@ -48,6 +52,9 @@
             </div>
         </div>
     </section>
+
+
+    <!-- CARDS SECTION -->
 
     <div class="cards-container">
 

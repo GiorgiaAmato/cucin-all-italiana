@@ -1,35 +1,73 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
 /*Helpers -------------------*/
-body {
+body {font-family: 'Montserrat', sans-serif; background-color: #F4F8FD ;}
+
+li {list-style-type: none;}
+
+a {text-decoration: none; color: #1E1E1E;}
+a:hover {color: #F6A669;}
+
+.mb{margin-bottom: 50px;}
+
+.btn {
+    background-color: #F6A669; 
+    color:#F4F8FD;
+    border:none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    width: 220px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
 }
 
-li {list-style-type: none;}
+
 
 /* navbar --------------------- */
 .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 25px 25px;
 }
 
-.menu {
-    display: flex;
-    list-style-type: none;
-}
+.navbar_logo {display: flex;}
+.navbar_logo img {width: 40px; height: 40px;margin-right: 10px; }
+.navbar_logo h1 {font-family: 'Shadows Into Light', cursive; font-size: 30px; color: #F6A669;}
+.navbar_menu {display: flex; align-items: center; }
+.navbar_menu li {padding: 0 25px; }
+.navbar_menu li a {text-transform: uppercase; font-weight: 500;}
 
-.menu li {
-    padding: 0 25px;
-}
-
-.menu li a {
-    text-decoration: none;
-
-}
+#search {border-color: #F6A669; color: #F7F6DC; border: 1px solid red;}
 
 /* Hero section --------------------*/
 .hero_container {
     height: 90vh;
-    background-image: url(img/hero-img.png);
+    padding: 25px;
+    background-image: url(img/hero-img.png); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.hero_container h2 {
+    color: #509B4F;
+    font-size: 46px;
+    margin-bottom: 50px;
+}
+
+.hero_social {display: flex; margin-top: 100px; }
+.hero_social h3 {margin-right: 10px;}
+.hero_social_icon { display: flex; }
+.hero_social_icon li { margin-right: 10px;}
+.hero_social_icon li img {width: 20px;}
+
+
 
 /* Cards --------------------*/
 .cards-container {
