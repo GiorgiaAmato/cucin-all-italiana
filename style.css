@@ -1,0 +1,37 @@
+/*Helpers -------------------*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Menu --------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 0 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+
+}
+
+/* Cards --------------------*/
+.cards-container {
+    display: flex;
+}
+
+.card h3 {
+    margin: 5px;
+}
+
+.card img {
+    width: 100%;
+}
