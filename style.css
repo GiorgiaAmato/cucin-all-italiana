@@ -3,7 +3,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Menu --------------------- */
+li {list-style-type: none;}
+
+/* navbar --------------------- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,6 +23,12 @@ body {
 .menu li a {
     text-decoration: none;
 
+}
+
+/* Hero section --------------------*/
+.hero_container {
+    height: 90vh;
+    background-image: url(img/hero-img.png);
 }
 
 /* Cards --------------------*/
