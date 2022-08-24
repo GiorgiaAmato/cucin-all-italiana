@@ -108,4 +108,24 @@ a:hover {color: #F6A669;}
 .newsletter_container {
     height: 90vh;
     background-color: #8FCA94;
+    padding: 25px;
+}
+
+/* Full-width input fields */
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=checkbox] {
+    border: 1px solid red;
+}
+
+input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
 }
