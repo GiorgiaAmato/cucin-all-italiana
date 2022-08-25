@@ -15,7 +15,7 @@ a:hover {color: #F6A669;}
 .mbb {margin-bottom: 50px;}
 .mbs {margin-bottom: 25px;}
 
-.tm {color: #509B4F; text-align: center;}
+.tm {font-size: 30px; color: #509B4F; text-align: center;}
 
 .btn {
     background-color: #F6A669;
@@ -45,14 +45,14 @@ a:hover {color: #F6A669;}
 .navbar_menu {display: flex; align-items: center; }
 .navbar_menu li {padding: 0 25px; }
 .navbar_menu li a {text-transform: uppercase; font-weight: 500;}
-.navbar_search {display: flex;}
+.navbar_search {display: flex; justify-content: end; width: 50%;}
 #search {margin: 0; box-shadow: 5px 5px 10px 0px #bfc4cc;}
 .btn_search {margin-left: 10px;}
 
 /* Hero section --------------------*/
 .hero_container {
     height: 90vh;
-    padding: 25px;
+    padding: 50px;
     background-image: url(img/hero-img.png); 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -76,25 +76,26 @@ a:hover {color: #F6A669;}
 
 
 /* Cards --------------------*/
-.cards_container {display: flex; flex-direction: row; padding: 25px;}
+.cards_container {display: flex; justify-content: center; flex-wrap: wrap; padding: 25px;}
+.card_link:hover {padding: 25px; transform: scale(0.2); cursor: poiter;}
 
 .card {
-    width: 100%; 
+    width: 40%; 
     height: 135px; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    background: linear-gradient(90.01deg, #509B4F 12.04%, #8FCA94 46.61%); 
+    background: #8FCA94; 
     margin: 10px;
     border-radius: 20px;
-}
+    box-shadow: 5px 5px 10px 0px #bfc4cc;}
 
 .card img {width: 50%; height: 100%; border-radius: 20px;}
 .card h3 {color: #FFFFFF; padding: 20px;}
 
 
 /* Articles --------------------*/
-.articles_container { display: flex; justify-content: center; }
+.articles_container { display: flex; justify-content: center; flex-wrap: wrap;}
 .article {
     width: 20%; 
     background-color: #FFFFFF; 
@@ -136,33 +137,24 @@ input[type=text] {
     font-family: Montserrat, sans-serif;
 }
 
-input[type=text]:focus {
-    background-color: #ddd;
-    outline: none;
-}
+input[type=text]:focus { background-color: #ccc; outline: none; }
 
-/* The container */
-.container {
+.radio_container {
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
+    font-size: 16px;
+    color: #F4F8FD;
 }
 
-/* Hide the browser's default radio button */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
+.radio_container a {text-decoration:underline; color: #F4F8FD;} 
 
-/* Create a custom radio button */
+.radio_container input {position: absolute; opacity: 0; cursor: pointer; }
+
 .checkmark {
     position: absolute;
     top: 0;
@@ -173,37 +165,24 @@ input[type=text]:focus {
     border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
-.container:hover input~.checkmark {
-    background-color: #ccc;
-}
+.radio_container:hover input~.checkmark { background-color: #ccc; }
 
-/* When the radio button is checked, add a blue background */
-.container input:checked~.checkmark {
-    background-color: #2196F3;
-}
+.radio_container input:checked~.checkmark { background-color: #fff; }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
+.checkmark:after { content: ""; position: absolute; display: none; }
 
-/* Show the indicator (dot/circle) when checked */
-.container input:checked~.checkmark:after {
-    display: block;
-}
+.radio_container input:checked~.checkmark:after {display: block; }
 
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
+.radio_container .checkmark:after {
+    top: 6px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background: white;
+    background: #509B4F;
 }
+
+
 
 /* Footer --------------------*/
 .footer_container {display: flex;justify-content: space-between; padding:  25px 25px;}
@@ -212,3 +191,15 @@ input[type=text]:focus {
 .footer_social h3 {margin-right: 10px;}
 .footer_social_icon li {margin-right: 10px; }
 .footer_social_icon li img {width: 20px; }
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------
+PAGE STYLE
+----------------------------------------------------------------------------------------------------------------*/
+.page_hero_container {height: auto; }
+.page_hero_content {display: flex;}
+.column_content {width: 50%; padding: 50px; display: flex; flex-direction: column; justify-content: center;}
+.column_content img {width: 100%;}
