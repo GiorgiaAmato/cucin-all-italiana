@@ -1,13 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Ricette All'Italiana</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="navbar">
+            <div class="navbar_logo">
+                <img src="img/logo.png" alt="Logo">
+                <h1>Cucina All'Italiana</h1>
+            </div>
+            <ul class="navbar_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chi-siamo.html">Chi siamo</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <form class="navbar_search">
+                <input id="search" type="text" placeholder="Cerca ricetta" required>
+                <button type="submit" class="btn btn_small btn_search">Cerca</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="page_hero mbb">
+        <div class="hero_container page_hero_container">
+            <h2>Le nostre ricette</h2>
+        </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="cards">
+        <div class="cards_container mbb">
     
+            <a href="#" class="card_link">
+                <div class="card">
+                    <h3>Antipasti</h3>
+                    <img src="img/antipasti.jpg" alt="Antipasti">
+                </div>
+            </a>
+    
+            <a href="#" class="card_link">
+                <div class="card">
+                    <h3>Primi piatti</h3>
+                    <img src="img/primi.jpg" alt="Primi piatti">
+                </div>
+            </a>
+    
+            <a href="#" class="card_link">
+                <div class="card">
+                    <h3>Secondi piatti</h3>
+                    <img src="img/secondi.jpg" alt="Secondi piatti">
+                </div>
+            </a>
+    
+            <a href="#" class="card_link">
+                <div class="card">
+                    <h3>Dessert</h3>
+                    <img src="img/dolci.jpg" alt="Dolci">
+                </div>
+            </a>
+    
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="articles">
+        <div class="articles_container mbb">
+            <div class="article">
+                <img src="img/pizza-salame.png" alt="Pizza con salame piccante">
+                <h3>Pizza con salame piccante</h3>
+                <p>Pizza in teglia con salame piccante e mozzarella, ricetta senza glutine facile e veloce da
+                    realizzare.</p>
+                <div class="article_info">
+                    <h4>Difficoltà: Media</h4>
+                    <h4>Costo: Economico</h4>
+                </div>
+                <button class="btn btn_small">Scopri di più</button>
+            </div>
+
+            <div class="article">
+                <img src="img/pasta-ragu.png" alt="Pasta al ragù">
+                <h3>Pasta al ragù</h3>
+                <p>La pasta al ragù di carne, un primo piatto classico della cucina italiana, gradito da tutti i
+                    commensali.</p>
+                <div class="article_info">
+                    <h4>Difficoltà: Facile</h4>
+                    <h4>Costo: Economico</h4>
+                </div>
+                <button class="btn btn_small">Scopri di più</button>
+            </div>
+
+            <div class="article">
+                <img src="img/pancake-fragole.png" alt="Pancake con fragole">
+                <h3>Pancake con fragole</h3>
+                <p>Pizza in teglia con salame piccante e mozzarella, ricetta senza glutine facile e veloce da
+                    realizzare.</p>
+                <div class="article_info">
+                    <h4>Difficoltà: Media</h4>
+                    <h4>Costo: Economico</h4>
+                </div>
+                <button class="btn btn_small">Scopri di più</button>
+            </div>
+
+            <div class="article">
+                <img src="img/pizza-salame.png" alt="Pizza con salame piccante">
+                <h3>Pizza con salame piccante</h3>
+                <p>Pizza in teglia con salame piccante e mozzarella, ricetta senza glutine facile e veloce da
+                    realizzare.</p>
+                <div class="article_info">
+                    <h4>Difficoltà: Media</h4>
+                    <h4>Costo: Economico</h4>
+                </div>
+                <button class="btn btn_small">Scopri di più</button>
+            </div>
+
+            <div class="article">
+                <img src="img/pasta-ragu.png" alt="Pasta al ragù">
+                <h3>Pasta al ragù</h3>
+                <p>La pasta al ragù di carne, un primo piatto classico della cucina italiana, gradito da tutti i
+                    commensali.</p>
+                <div class="article_info">
+                    <h4>Difficoltà: Facile</h4>
+                    <h4>Costo: Economico</h4>
+                </div>
+                <button class="btn btn_small">Scopri di più</button>
+            </div>
+
+            <div class="article">
+                <img src="img/pancake-fragole.png" alt="Pancake con fragole">
+                <h3>Pancake con fragole</h3>
+                <p>Pizza in teglia con salame piccante e mozzarella, ricetta senza glutine facile e veloce da
+                    realizzare.</p>
+                <div class="article_info">
+                    <h4>Difficoltà: Media</h4>
+                    <h4>Costo: Economico</h4>
+                </div>
+                <button class="btn btn_small">Scopri di più</button>
+            </div>
+            <div class="article">
+                <img src="img/pasta-ragu.png" alt="Pasta al ragù">
+                <h3>Pasta al ragù</h3>
+                <p>La pasta al ragù di carne, un primo piatto classico della cucina italiana, gradito da tutti i
+                    commensali.</p>
+                <div class="article_info">
+                    <h4>Difficoltà: Facile</h4>
+                    <h4>Costo: Economico</h4>
+                </div>
+                <button class="btn btn_small">Scopri di più</button>
+            </div>
+
+            <div class="article">
+                <img src="img/pancake-fragole.png" alt="Pancake con fragole">
+                <h3>Pancake con fragole</h3>
+                <p>Pizza in teglia con salame piccante e mozzarella, ricetta senza glutine facile e veloce da
+                    realizzare.</p>
+                <div class="article_info">
+                    <h4>Difficoltà: Media</h4>
+                    <h4>Costo: Economico</h4>
+                </div>
+                <button class="btn btn_small">Scopri di più</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer_container">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Informativa Cookie</a>
+            <p> &copy Cucina All’Italiana</p>
+            <div class="footer_social">
+                <h3>Seguici</h3>
+                <ul class="footer_social_icon">
+                    <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/tik-tok.png" alt="Tik Tok"></a></li>
+                    <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
