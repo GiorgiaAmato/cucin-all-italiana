@@ -24,7 +24,10 @@ a:hover {color: #F6A669;}
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     padding: 10px 20px;
+    transition: transform .2s;
 }
+
+.btn:hover {transform: scale(1.05);}
 
 .btn_big {width: 220px; font-size: 24px; }
 
@@ -77,11 +80,11 @@ a:hover {color: #F6A669;}
 
 /* Cards --------------------*/
 .cards_container {display: flex; justify-content: center; flex-wrap: wrap; padding: 25px;}
-.card_link:hover {padding: 25px; transform: scale(0.2); cursor: poiter;}
+.card_link {display: block; width: 25%; transition: transform .2s;}
+.card_link:hover {transform: scale(1.05);}
 
 .card {
-    width: 40%; 
-    height: 135px; 
+    height: 130px;
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -101,8 +104,9 @@ a:hover {color: #F6A669;}
     background-color: #FFFFFF; 
     border-radius: 20px; 
     padding: 20px; 
-    margin: 0 20px; 
+    margin: 20px 20px; 
     box-shadow: 5px 5px 10px 0px #bfc4cc;
+
 }
 .article img {width: 100%; border-radius: 20px;}
 .article h3 {font-size: 20px; font-weight: 600; margin: 15px 0;}
