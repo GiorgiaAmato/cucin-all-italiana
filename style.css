@@ -12,7 +12,9 @@ li {list-style-type: none;}
 a {text-decoration: none; color: #1E1E1E;}
 a:hover {color: #F6A669;}
 
-.mb {margin-bottom: 50px;}
+.mbb {margin-bottom: 50px;}
+.mbs {margin-bottom: 25px;}
+
 .tm {color: #509B4F; text-align: center;}
 
 .btn {
@@ -43,7 +45,9 @@ a:hover {color: #F6A669;}
 .navbar_menu {display: flex; align-items: center; }
 .navbar_menu li {padding: 0 25px; }
 .navbar_menu li a {text-transform: uppercase; font-weight: 500;}
-
+.navbar_search {display: flex;}
+#search {margin: 0; box-shadow: 5px 5px 10px 0px #bfc4cc;}
+.btn_search {margin-left: 10px;}
 
 /* Hero section --------------------*/
 .hero_container {
