@@ -224,7 +224,7 @@ PAGE STYLE
 
 
 
-@media only screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
     /* navbar --------------------- */
     .navbar {
     display: flex;
@@ -251,16 +251,18 @@ PAGE STYLE
 
     /* Cards --------------------*/
     .card_link {
-        width:100%;
+        width: auto;
+        max-width: 70%;
     }
 
     .card {
-        height: 100px;
+        height: auto;
     }
 
     /* Articles --------------------*/
     .article {
         width: auto;
+        max-width: 60%;
         margin: 20px 40px;
     }
 
