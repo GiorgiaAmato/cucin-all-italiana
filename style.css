@@ -224,7 +224,7 @@ PAGE STYLE
 
 
 
-@media only screen and (min-width: 150px) {
+@media only screen and (min-width: 768px) {
     /* navbar --------------------- */
     .navbar {
     display: flex;
