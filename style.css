@@ -100,7 +100,7 @@ a:hover {color: #F6A669;}
 /* Articles --------------------*/
 .articles_container { display: flex; justify-content: center; flex-wrap: wrap;}
 .article {
-    width: 20%; 
+    width: 25%; 
     background-color: #FFFFFF; 
     border-radius: 20px; 
     padding: 20px; 
@@ -225,18 +225,32 @@ PAGE STYLE
 
 
 @media screen and (max-width: 992px) {
+    /* Helpers--------------------*/
+    .btn_big {
+            width: 180px;
+            font-size: 20px;
+        }
+
+
     /* navbar --------------------- */
     .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: 0px;
     line-height: 80px;
 }
-
-    .navbar_logo img {margin-right: 5px; }
-    .navbar_menu li {padding: 0 25px; }
-    .navbar_search {width: 100%;}
+    .navbar_logo {padding: 10px 25px;}
+    .navbar_logo img {margin-right: 0px; }
+    .navbar_menu li {padding: 0 25px; color: #eee; }
+    .navbar_menu li a {color: #eee; font-weight: bold; }
+        .navbar_menu {
+            justify-content: center;
+            width: 100%;
+            background-color: #8FCA94;
+            margin-bottom: 25px;
+        }
+    .navbar_search {width: 100%; padding: 10px 25px;}
 
     /* Hero section --------------------*/
     .hero_container {
@@ -246,7 +260,7 @@ PAGE STYLE
     }
 
     .hero_container h2 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     /* Cards --------------------*/
